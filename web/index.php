@@ -13,4 +13,9 @@ $app->get('/', function() use($app) {
     return $app['twig']->render('index.html.twig', array());
 });
 
+$app->get('/boende', function() use($app) {
+    return $app['twig']->render('boende.html.twig', array());
+});
+
+
 $app->run(); 
