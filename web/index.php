@@ -21,5 +21,9 @@ $app->get('/hitta-hit', function() use($app) {
     return $app['twig']->render('hitta_hit.html.twig', array());
 });
 
+$app->get('/kontakt', function() use($app) {
+    return $app['twig']->render('kontakt.html.twig', array());
+});
+
 
 $app->run(); 
